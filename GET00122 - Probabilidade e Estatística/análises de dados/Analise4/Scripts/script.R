@@ -1,0 +1,76 @@
+library(dplyr)
+
+#1
+ar <- airquality
+
+#1.i)
+ar <- na.omit(ar)
+
+#1.ii) Ozone Solar.R Wind Temp Month Day
+plot(ar$Ozone, ar$Solar.R, main = "Ozonio x Radiação Solar", xlab = "Ozonio",
+     ylab = "Radiação Solar")
+plot(ar$Ozone, ar$Wind, main = "Ozonio x Velocidade do Vento", xlab = "Ozonio",
+     ylab = "Velocidade do Vento")
+plot(ar$Ozone, ar$Temp, main = "Ozonio x Temperatura", xlab = "Ozonio",
+     ylab = "Temperatura")
+plot(ar$Solar.R, ar$Wind, main = "Radiação Solar x Velocidade do Vento",
+     xlab = "Radiação Solar", ylab = "Velocidade do Vento")
+plot(ar$Solar.R, ar$Temp, main = "Radiação Solar x Temperatura",
+     xlab = "Radiação Solar", ylab = "Temperatura")
+plot(ar$Wind, ar$Temp, main = "Velocidade do Vento x Temperatura", xlab =
+       "Velocidade do Vento", ylab = "Temperatura")
+
+#1.iii)
+#Ozonio x Radiacao (consegui ver uma curva monotona)
+cor(ar$Ozone, ar$Solar.R, method = "spearman") #0.3481865
+#Ozonio x Vento (consegui ver uma linha)
+cor(ar$Ozone, ar$Wind) #-0.6124966
+#Ozonio x Temperatura (consegui ver uma linha e/ou curva, mas importante que
+#monotonas)
+cor(ar$Ozone, ar$Temp, method = "spearman") #0.7729319
+#Radiacao x Vento (não observei indicios de correlação)
+cor(ar$Solar.R, ar$Wind, method = "spearman") #-0.06169636
+#Radiacao x Temperatura (vislumbrei uma reta)
+cor(ar$Solar.R, ar$Temp) #0.2940876
+#Vento x Temperatura (observei uma reta)
+cor(ar$Wind, ar$Temp) #-0.4971897
+
+#1.iv)
+#a
+cor(ar$Ozone, ar$Temp, method = "spearman") #0.7729319
+#b
+ar5 <- filter(ar, ar$Month == 5)
+cor(ar5$Ozone, ar5$Temp, method = "spearman") #0.5434119
+ar6 <- filter(ar, ar$Month == 6)
+cor(ar6$Ozone, ar6$Temp, method = "spearman") #0.6610937
+ar7 <- filter(ar, ar$Month == 7)
+cor(ar7$Ozone, ar7$Temp, method = "spearman") #0.7959532
+ar8 <- filter(ar, ar$Month == 8)
+cor(ar8$Ozone, ar8$Temp, method = "spearman") #0.6780686
+ar9 <- filter(ar, ar$Month == 9)
+cor(ar9$Ozone, ar9$Temp, method = "spearman") #0.7023589
+
+
+#considerando o banco de dados carregado e referenciado por Consumo
+#2.i)
+plot(Consumo$preco_bovino_varejo, Consumo$consumo_bovino, main = 
+       "Preço Carne Bovina (Varejo) x Consumo", xlab = "Preço", ylab = "Consumo")
+#2.ii)
+cor(Consumo$preco_bovino_varejo, Consumo$consumo_bovino, method = "spearman")
+#-0.9549094
+
+#3.i)
+plot(Consumo$preco_frango_varejo, Consumo$consumo_frango, main = 
+       "Preço Frango (Varejo) x Consumo", xlab = "Preço", ylab = "Consumo")
+cor(Consumo$preco_frango_varejo, Consumo$consumo_frango) #0.9614316
+
+#4.i)
+Consumo <- mutate(Consumo, Prec_Dif = Consumo$preco_bovino_varejo - 
+                    Consumo$preco_frango_varejo)
+#4.ii)
+plot(Consumo$consumo_frango, Consumo$Prec_Dif, main = 
+       "Consumo de Frango x Diferença de Preços de Carne Bovina e Frango", xlab = 
+       "Consumo", ylab = "Diferença de Preço")
+#4.iii)
+cor(Consumo$consumo_frango, Consumo$preco_frango_varejo, method = "spearman")
+# 0.9471061

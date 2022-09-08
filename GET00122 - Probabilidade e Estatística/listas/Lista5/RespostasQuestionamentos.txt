@@ -1,0 +1,49 @@
+#1.ii)
+Ozonio x Radiacao: observei uma curva monotona
+Ozonio x Vento: observei uma linha
+Ozonio x Temperatura : consegui ver uma linha/curva, mas mais importante, monotonas
+Radiacao x Vento: não observei indicios de correlação
+Radiacao x Temperatura: observei uma linha, mas há siginificativa dispersao
+Vento x Temperatura: observei uma reta
+
+
+#1.iii) Analisando de forma geral, sem procurar possíveis tendencias especificas corre-
+lacionadas a intervalos dentro das variáveis:
+>>Ozonio x Radiacao: possuem certo grau de correlação positiva, porém ainda perto de 0
+para se dizer que de fato há uma influência de uma sobre a outra;
+>>Ozonio x Vento: possuem uma significativa correlação negativa, ou seja, quando uma au-
+menta, a outra tende a diminuir;
+>>Ozonio x Temperatura: possuem correlação positiva, ou seja, conforme uma sobe, a outra
+tende a subir também;
+>>Radiacao x Vento: não estao correlacionados;
+>>Radiacao x Temperatura: possuem um grau de correlação positiva muito pequeno;
+>>Vento x Temperatura: possuem certa correlação negativa, o que implica que quando uma
+se eleva, a outra decai.
+
+
+#2.i) Sim, observa-se uma curva imaginária entre as variaveis, o que é indício de uma pos-
+sível correlação;
+#2.iii)
+O gráfico de dispersão mostra a tendencia de correlação entre as variáveis, isso uma
+vez que podemos observar uma curva decrescente nele. Logo, com isso poderíamos supor
+que as variáveis possuem correlação negativa. Ao aplicar a avaliação de correlação de 
+Spearman, confirma-se tal fato, com o resultado de -0.9549094, indicando uma correlação
+fortíssima e negativa, ou seja, inversamente proporcional (conforme o preço de carne so-
+be observa-se queda no consumo da mesma). Porém há de se lembrar que outros fatores e com-
+binação de outros fatores podem inflenciar o panorama de uma forma mais geral e que NÃO é
+possível se obter relação de causa e efeito somente com esse tipo de análise.
+
+#3.ii) Em um primeiro momento, utilizando somente o gráfico de dispersão e o coeficiente de
+correlaçao, teríamos essa ideia. Todavia, há de se lembrar que outros fatores, e suas combi-
+nações podem também influenciar o panorama, levando ao resultado observado. Isso é, não é
+possível atribuir relação de causa e efeito diretamente através desses dados, somente.
+
+#4.ii) Podemos observar forte correlação de dados, em que parece haver uma relação em "forma de
+curva", e essa é forte, pois não há muita dispersão em torno de tal curva imaginária.
+#4.iv) Podemos concluir que um dos fatores que explicam o que seria a estranha correlação posi-
+tiva entre preço do frango e consumo do frango pode ser justamente a diferença entre o preço de
+carne bovina e de frango. Ou seja, o preço do frango sim subiu, mas a diferença entre o preço dos
+dois tipos de carne era tal que essa subida não teve total impacto como haveria de se supor. O 
+consumo da carne de frango está fortemente correlacionado positivamente com o aumento da diferen-
+ça de preços. Tais análises tendem a reforçar a hipótese levantada no exercício anterior sobre o 
+assunto.

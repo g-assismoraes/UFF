@@ -1,0 +1,26 @@
+#Resposta ao questionamento feito em 1.ii
+Em um primeiro momento, ao tentar fazer a analise sem levar em conta a divisão de classes, percebo que não resulta em algo produtivo,
+reforçando a ideia de que idade é uma característica quantitativa e deve ser avaliada de preferência com a divisão por classes;
+
+Mas ao analisar os dados devidamente dispostos, percebo alguns pontos, dentre outros,
+	>No banco de dados há informações de pacientes com idade entre 20 e 85 anos(mais precisamente [21. 81] consultando os dados);
+	>Pouco mais da metade são jovens adultos (entre 20 e 30 anos);
+	>Pouco mais da quarta parte têm idade igual a 40 ou superior (27%, consultando a tabela).
+
+
+#Resposta ao questionamento feito em 1.v
+Dentre os pacientes negativos, a maioria(67.6%) possui taxa de glucose INFERIOR a 120. Já entre os pacientes positivos, podemos ver que
+a maioria(73,9%) possui taxa SUPERIOR a 120. É condizente com os fatos, uma vez que a taxa de glucose tende a ser maior nas pessoas com
+diabetes, devido justamente às questões de como o organismo lida com açúcar com ou sem a doença.
+
+
+#Resposta ao questionamento feito em 1.vi
+Observa-se que os negativos se concentram em maior frequencia na menor taxa[0, 100) em relação aos positivos, embora ambos tenham suas 
+maiorias nesse intervalo de taxas. O formato de ambos os histogramas é relativamente similar de forma geral, mas há de se lembrar que 
+àqueles que possuem diabetes possuem maiores taxas de açúcar no sangue pelo visto nos outros dados. Ambas as taxas devem ter uma correlação
+em seus níveis para que um paciente seja saudável ou não.
+
+
+
+
+   

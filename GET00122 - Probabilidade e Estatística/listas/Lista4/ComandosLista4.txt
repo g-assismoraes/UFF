@@ -1,0 +1,58 @@
+library(dplyr)
+library(lubridate)
+
+#1) dados recebe airquality
+dados <- airquality
+
+
+#1.i) tratando os na
+dados <- na.omit(dados)
+
+
+#1.ii) criando histograma dos níveis de ozonio e inserindo uma linha vermelha
+#para média e uma azul para mediana.
+histogramaOzonio <- hist(dados$Ozone, xlim = c(0, 200), ylim = c(0, 40), main = 
+              "Nível de Ozônio", xlab = "Nível de Ozônio", ylab = "Frequência")
+abline(v = mean(dados$Ozone), col= "red")
+abline(v = median(dados$Ozone), col = "blue")
+
+
+#1.iii) Primeiro cria uma nova variavel, Data, para então plotar um gráfico de linha
+#dos niveis de ozonio e da temperatura em funcao dessa data, para sair "bonitinho"
+#por mes
+dados<- mutate(dados, Data = ymd(paste(1975, dados$Month, dados$Day, sep = "-")))
+plot(dados$Data, dados$Ozone, type = "l", main = "Evolução Temporal do Nível de
+     Ozônio (1975)", xlab = "Mês", ylab = "Nível de Ozônio (ppb)")
+
+plot(dados$Data, dados$Temp, type = "l", main = "Evolução Temporal da Temperatura
+     (1975)", xlab = "Mês", ylab = "Temperatura (F)")
+
+
+#1.iv)
+
+#linkando os dados para serem agrupatos em funcao do mes
+linkado_poMes <- group_by(dados, Month)
+
+#aplicando as metricas requeridas no banco de dados linkado
+mediaOzonioMes <- summarise(linkado_poMes, mean(Ozone))
+sdOzonioMes <- summarise(linkado_poMes, sd(Ozone))
+mediaTemperaturaMes <- summarise(linkado_poMes, mean(Temp))
+sdTemperaturaMes <- summarise(linkado_poMes, sd(Temp))
+
+#formando a tabela juntando as metricas
+tabela <- data.frame(mediaOzonioMes, mediaTemperaturaMes, sdOzonioMes,
+                     sdTemperaturaMes)
+
+#removendo as redundancias
+tabela <- select(tabela, -Month.1, -Month.2, -Month.3)
+
+#exportando em formato .csv
+write.csv(tabela, file = "tabela.csv")
+
+
+#1.v) criando os boxplot requeridos para todos os meses
+
+boxplot(dados$Ozone~dados$Month, main="BoxPlot: Nível de Ozonio x Mês", xlab="Mês",
+        ylab="Nível(ppb)")
+boxplot(dados$Temp~dados$Month, main="BoxPlot: Temperatura x Mês", xlab="Mês",
+        ylab="Temperatura(F)")

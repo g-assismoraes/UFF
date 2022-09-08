@@ -1,0 +1,38 @@
+#1.ii)
+A distribuição dos níveis do gás ozônio não é simétrica, com valores ocorrendo com frequên-
+cia ao redor da mediana (que é um valor relativamente baixo), sobretudo anteriormente a ela.
+Observa-se também, maior ocorrência de valores inferiores a média, e dessa forma passada essa,
+a frequência para os valores registrados cai bastante. Há a presença de alguns níveis destoan-
+tes dos demais.
+
+#1.v)
+No primeiro mês com registros observa-se valores que podem-se dizer bem próximos da mediana, que
+por sua vez é um valor relativamente baixo de nível de ozônio. Há certa simetria e a presença de
+um valor extremo, sendo esse um valor grande. Ao observarmos a temperatura para esse mês não se
+observa valores tão concentrados ao redor da mediana, com um nível de dispersão. Entretando o ter-
+ceiro quartil aponta para algo aproximado a 70 F, o que indica grande registro de temperaturas mais
+amenas. Sobre a distancia dos bigodes em relação a caixa, não há simetria, sendo o bigode superior
+uma indicação de uma possível dispersão de dados nesse sentido; No segundo mês não há simetria e não
+há uma distribuição grande dos dados, estando concentrados em níveis relativamente baixos. Não há si-
+metria na caixa, indicando que os valores se distribuem de forma diferente ao redor da mediana. Para
+temperatura observamos um boxplot simétrico, o que indica que os registros ocorreram de forma simétri-
+ca ao redor da mediana, que dessa vez apresentou uma subida para um pouco mais de 75F; Para o mês se-
+guinte ocorre a dispersão dos níveis de ozonio registrados, não mais concentrados e tão pouco ao redor
+da mediana. De forma geral há um aumento dos níveis de ozonio, uma vez que pode-se observar o primeiro
+quartil em torno de algo superior a 46ppb, colocando assim 75% dos dados a cima dos registros anterio-
+res. Os valores de temperatura para esse mês se concentram, se comparados com os anteriores, e agora em 
+níveis mais elevados. O primeiro quartil localiza-se em torno de 80F, o que coloca a maior parte dos re-
+gistros superior a essa temperatura. Existe um valor extremo, sendo interessante registrar que dessa vez
+ele é de uma temperatura mais baixa; No mês 8, os registros de ozonio ficam assimétricos, o que indica
+maior distribuição dos dados. Há registros de maiores níveis de ozonio nesse mês, se comparados com os 
+meses anteriores, mas não formam maioria. Os valores se desconcentram mais ainda da mediana. Para tempe-
+ratura, ocorre também uma assimetria, entretanto com os dados ainda em níveis relativamente altos de me-
+dida. Não há concentração ao redor da mediana; Por fim, no último mês, observa-se uma simetria no boxplot
+de níveis de ozonio, relativa simetria de dados ao redor da mediana e bigodes que não se afastam da caixa.
+Com isso pode-se aferir a concentração dos registros em níveis mais baixos do que os imediantamentes ante-
+riores. Há a presença de valores extremos, sendo esses valores superiores ao boxplot. Para a temperatura, 
+pode-se observar uma relativa queda, com a caixa descendo um pouco. Há uma simetria aparente e valroes não
+concentrados ao redor da mediana, mas de forma geral se percebe que houveram mais registros de temperaturas
+inferiores nesse mês, sobretudo se comparado com os dois meses anteriores.
+Conclui-se, pois, que o nível de ozônio, dentre outros fatores, deve possuir relação em como a temperatura va-
+ria na realidade.

@@ -1,0 +1,27 @@
+#para que dados contem a referencia ao titulos_federais.csv;
+#onde as bibliotecas ja fora instaladas;
+
+#importa biblioteca que sera usada
+library(dplyr)
+
+#1.a)
+titulos_NTNB<-filter(dados, Sigla == "NTN-B")
+
+#1.b)
+titulos_NTNB<-mutate(titulos_NTNB, Preco_dif = Preco_Max_Negociacao - Preco_Min_Negociacao)
+
+#1.c)
+titulos_NTNB<-filter(titulos_NTNB, Operacoes_com_corretagem > 0)
+
+#1.d)
+titulos_NTNB<-select(titulos_NTNB, -(Taxa_Min_negociacao:Taxa_max_negociacao))
+
+#1.e)
+write.table(titulos_NTNB, "titulos_NTNB.csv", sep = ";", row.names = F)
+
+
+#2.a)
+dados<-rename(dados, Negociacoes = Qtd_negociada)
+#2.b)
+por_sigla<-group_by(dados, Sigla)
+med_neg_por_sigla<-summarise(por_sigla, mean(Negociacoes))

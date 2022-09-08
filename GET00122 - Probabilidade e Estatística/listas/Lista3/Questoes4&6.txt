@@ -1,0 +1,14 @@
+1.iv)
+      O preço da carne bovina foi superior ao da carne de frango durante todos os anos registrados. Todavia, conforme o passar dos anos,
+a diferença de preço se tornou cada vez maior - com o preço da carne bovina subindo consideravelmente mais do que o da carne de frango.
+Logo, pode-se pensar que que tal diferença de preço e, tamanha escalada no preço da carne bovina, tenham tido impacto em questões como o
+orçamento familiar e por fim qual o tipo de carne a ser comprado, por exemplo. Nesse sentido, podemos ter um fator que contribuiu para o
+aumento do consumo de frango enquanto, ao contrário, para a queda do consumo de carne bovina.
+
+1.vi)
+As variâncias se comportam da seguinte forma:
+
+	var_bovina(16719.81) > var_suino (5705.255) > var_frango (2223.662)
+
+Assim podemos concluir que a carne de boi foi a que teve seu preço variando para valores mais distantes ao longo dos anos, seguida da
+carne suina e sendo a carne de frango a com menor variância.
