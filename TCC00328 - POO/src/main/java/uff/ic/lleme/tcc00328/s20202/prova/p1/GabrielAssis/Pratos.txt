@@ -1,0 +1,5 @@
+Hamburguer 18,50
+BatataFrita 10,00
+Refrigerante 5,00
+Sanduiche 13,00
+Sorvete 8,00
